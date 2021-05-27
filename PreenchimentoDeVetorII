@@ -1,0 +1,11 @@
+N = []
+z = 0
+T = int(input())
+for c in range(0, 1000):
+    if z >= T:
+        z = 0
+    N.append(z)
+    z += 1
+
+for v, c in enumerate(N):
+    print(f"N[{v}] = {c}")
