@@ -1,0 +1,16 @@
+N = []
+for c in range(0, 20):
+    z = int(input())
+    N.append(z)
+
+copia = N[:]
+
+del N
+N = []
+
+for c in range(19, -1, -1):
+    z = copia[c]
+    N.append(z)
+
+for p, v in enumerate(N):
+    print(f"N[{p}] = {v}")
