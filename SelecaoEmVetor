@@ -1,0 +1,8 @@
+A = []
+for c in range(0, 100):
+    z = float(input())
+    A.append(z)
+
+for p, v in enumerate(A):
+    if v <= 10:
+        print(f"A[{p}] = {v:.1f}")
