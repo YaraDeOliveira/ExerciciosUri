@@ -1,0 +1,12 @@
+lista = []
+d = 1
+x = int(input())
+
+for c in range (0, 10):
+    if c == 0:
+        d = x
+    else:
+        d *= 2
+    lista.append(d)
+for v, c in enumerate(lista):
+    print(f"N[{v}] = {c}")
