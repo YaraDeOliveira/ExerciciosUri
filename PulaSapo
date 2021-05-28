@@ -1,0 +1,20 @@
+P, N = input().split()
+P = int(P)
+N = int(N)
+lista = []
+cont = 0
+altura = input().split()
+for c in altura:
+    c = int(c)
+    lista.append(c)
+for d in range(0, N-1):
+    if lista[d+1] >= lista[d]:
+        alturaEntreCanos = lista[d + 1] - lista[d]
+    else:
+        alturaEntreCanos = lista[d] - lista[d+1]
+    if alturaEntreCanos > P:
+        cont += 1
+if cont == 0:
+    print("YOU WIN")
+else:
+    print("GAME OVER")
